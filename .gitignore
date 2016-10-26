@@ -1,0 +1,12 @@
+*.o
+*.d
+*.la
+*.lai
+*.tlog
+*.log
+*.ilk
+*VC.db
+.suo
+*.idb
+*.obj
+.DS_Store
