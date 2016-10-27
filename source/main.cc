@@ -1,11 +1,11 @@
-#include <iostream>
+#include <void_engine/base/game.h>
+#include <void_engine/base/debug/logger.h>
 
-#include "void_engine/base/game.h"
+int main(int argc, char** argv) {
+    using namespace void_engine;
+    LOGWARN("Game started!");
 
-int main() {
-    std::cout << "Game started!" << std::endl;
-
-    void_engine::Game game("test_game");
+    Game game("test_game");
     game.init();
 
     return game.run();

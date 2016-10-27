@@ -10,3 +10,4 @@
 *.idb
 *.obj
 .DS_Store
+./project/android/jni/SDL2/*

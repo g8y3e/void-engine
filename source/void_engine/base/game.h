@@ -2,6 +2,8 @@
 
 #include <string>
 
+#include <void_engine/third_party/SDL2/SDL.h>
+
 namespace void_engine {
     class Game {
     public:

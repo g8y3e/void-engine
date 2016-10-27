@@ -1,7 +1,11 @@
 #include "game.h"
 
-// temp
-#include <iostream>
+#include <void_engine/base/debug/logger.h>
+#include <void_engine/base/render/render.h>
+
+void log(const std::string& message) {
+    std::cout << message << std::endl;
+}
 
 namespace void_engine {
     Game::Game(const std::string& name) 
@@ -9,15 +13,22 @@ namespace void_engine {
     }
 
     Game::~Game() {
-
     }
 
     void Game::init() {
-        std::cout << "Game \"" << this->name_ << "\" init!" << std::endl;
+        std::string message = "Game \"";
+        message.append(this->name_).append("\" init!");
+        LOGINFO(message);
+
+        Render render;
+        render.init(this->name_);
     }
 
     int Game::run() {
-        std::cout << "Game \"" << this->name_ << "\" running!"<< std::endl;
+        std::string message = "Game \"";
+        message.append(this->name_).append("\" running!");
+        LOGINFO(message);
+
         std::cin.get();
 
         return 0;

@@ -19,6 +19,30 @@
     <Filter Include="Source Files\void_engine\base">
       <UniqueIdentifier>{5a0be5a1-c371-4b90-a3a0-ba58218c7023}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\void_engine">
+      <UniqueIdentifier>{6622249e-5da9-4ead-a0f8-ee7dc3f4e2a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\void_engine\base">
+      <UniqueIdentifier>{8830ecd0-d5f5-4461-ab78-bb4e1834590b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\void_engine\base\exception">
+      <UniqueIdentifier>{1afb552b-8beb-4ebe-b268-0b83dec42d55}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\void_engine\base\render">
+      <UniqueIdentifier>{fec7c1bc-73fb-4cca-a23b-27b855a016db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\void_engine\base\render">
+      <UniqueIdentifier>{34b9895c-73cb-4f69-9ee7-7517537d3e40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\void_engine\base\debug">
+      <UniqueIdentifier>{4e92caf2-99ad-4aaa-a147-3d58ad8e308a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\void_engine\base\debug">
+      <UniqueIdentifier>{c97e2ace-abdb-4a2c-893c-8897eac08d1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\void_engine\base\helper">
+      <UniqueIdentifier>{2c406138-a7c8-4a9f-bde5-09ea3bfe6874}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\source\main.cc">
@@ -27,10 +51,28 @@
     <ClCompile Include="..\..\..\source\void_engine\base\game.cc">
       <Filter>Source Files\void_engine\base</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\source\void_engine\base\debug\logger.cc">
+      <Filter>Source Files\void_engine\base\debug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\void_engine\base\render\render.cc">
+      <Filter>Source Files\void_engine\base\render</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\source\void_engine\base\game.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\void_engine\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\void_engine\base\exception\void_runtime_exception.h">
+      <Filter>Header Files\void_engine\base\exception</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\void_engine\base\render\render.h">
+      <Filter>Header Files\void_engine\base\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\void_engine\base\debug\logger.h">
+      <Filter>Header Files\void_engine\base\debug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\void_engine\base\helper\define.h">
+      <Filter>Header Files\void_engine\base\helper</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
